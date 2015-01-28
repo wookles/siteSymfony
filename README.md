@@ -17,4 +17,3 @@
 
 [lien] (http://actorzzz.com)
 *(sujet a modifications ultérieures multiples)*
->>>>>>> cc934575a22f244a30d964c63c17d0cc85ca680d
