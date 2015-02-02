@@ -1,0 +1,7 @@
+Accueil_site:
+    path:     /Actorzzz
+    defaults: { _controller: TestPremierBundle:Advert:index }
+
+Page2:
+    path:     /page2
+    defaults: { _controller: TestPremierBundle:Page2:index }
