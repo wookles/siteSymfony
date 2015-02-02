@@ -1,0 +1,3 @@
+test_premier:
+    resource: "@TestPremierBundle/Resources/config/routing.yml"
+    prefix:   /
