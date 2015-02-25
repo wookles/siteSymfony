@@ -1,3 +1,3 @@
 actorzzz_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: ActorzzzBundle:Default:index }
+    path:     /home/{name}
+    defaults: { _controller: ActorzzzBundle:AccueilController:index }
