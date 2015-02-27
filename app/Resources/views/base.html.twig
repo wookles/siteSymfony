@@ -1,11 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<--
-
- balises title differentes pour chaque page
-	demander pour la casse dans balises
-	ordre des métas
--->
+<-- balises title differentes pour chaque page,	demander pour la casse dans balises,	ordre des métas -->
 
 <html>
     <head>
@@ -20,14 +15,14 @@
 		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
 
 
-<-- 
-	créer @ mail pour
-		META NAME="Reply-to" CONTENT="d@monsite.com (Philippe Armanger)"/>
-	refresh
-		Le W3C conseille de ne pas l'utiliser. Nous vous recommandons plutôt l'utilisation d'une redirection 301 côté serveur.
-		META NAME="Indentifier-URL" CONTENT="http://cyberzoide.developpez.com/"> -> une fois sorti du ssh 
--->
-        
+<-- 	créer @ mail pour	-->
+<--		META NAME="Reply-to" CONTENT="d@monsite.com (Philippe Armanger)"/> -->
+<--	refresh-->
+<--		Le W3C conseille de ne pas l'utiliser. Nous vous recommandons plutôt l'utilisation d'une redirection -->
+<-- 301 côté serveur.-->
+<--		META NAME="Indentifier-URL" CONTENT="http://cyberzoide.developpez.com/"> -> une fois sorti du ssh -->
+
+                                
         <title>	{% block title %}	{% endblock %}	</title>
         {% block stylesheets %}	{% endblock %}
     </head>
