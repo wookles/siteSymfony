@@ -1,0 +1,12 @@
+charlie :
+Nettoyer les fichiers et gérer l'arborescence
+	modele = http://iabsis.com/themes/iabsis/assets/img/tutos/symfony2/structure-projet-symfony.png
+	
+	lien pour ce faire = http://iabsis.com/fr/community/tuto/first-symfony2-app
+		
+	question a poser a monsieur Jousee : "Les deux fichiers composer.* sont ils a la bonne place (reponse a 99% oui mais bon)"
+				
+damien : 
+	bdd
+			
+				
