@@ -1,0 +1,12 @@
+charlie :
+demander a m. jousse de nous aider a nettoyer les fichiers et gérer l'arborescence
+	modele = http://iabsis.com/themes/iabsis/assets/img/tutos/symfony2/structure-projet-symfony.png
+	
+	questions : Dans /Symfony/ peut on supprimer tout ce qui n'est pas répertoire (c a d README.md, UPGRADE.md, site.md)
+				Peut on degager dans /Symfony/web des trucs ou alors est ce que ça sert aux affichage derreurs si le site ne se lance pas
+				Peut on recréer un dossier genre siteActorzzz qui va contenir tous les repertoires de ce projet, la ou tout est dans symfony
+				Les deux fichiers composer.* sont ils a la bonne place
+				
+damien : bdd
+			
+				
