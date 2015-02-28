@@ -1,30 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+	   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<!- balises title differentes pour chaque page,	demander pour la casse dans balises,	ordre des métas -->
-
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
     <head>
-    	<meta CHARSET="UTF-8"/>
-    	<meta NAME="keywords" CONTENT="Acteurs, Actrices, Actorzzz, Actrizzz, topTenzzz, Armanger, Parmenon, Marechal"/>
-    	<meta NAME="description" CONTENT="Site décalé de référencement et d'informations concernant des acteurs (Actorzzz) et des actrices(Actricszzz), qui permet -en tant que membre- de voter pour faire apparaître dans le topTenzzz les élus de votre coeurzzz"/>
-    	<META NAME="author" LANG="fr" CONTENT="Philippe Armanger, Charlie Maréchal, Damien Parmenon"/> 
-		<META NAME="publisher" CONTENT="Philippe Armanger"/> 
-		<meta NAME="robots" CONTENT= "noodp" /> 							<!- pour futur lancements perso -->
-		<META NAME="Generator" CONTENT="Symfony2(php 5.6.4, twig,  )"> 		<!- a finir -->
-		<META NAME="Date" CONTENT="Mon, 14 Sep 1998 08:00:00"> 
-		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
-
-
-<!-	créer @ mail pour	-->
-<!-		META NAME="Reply-to" CONTENT="d@monsite.com (Philippe Armanger)"/> -->
-<!-	refresh-->
-<!-		Le W3C conseille de ne pas l'utiliser. Nous vous recommandons plutôt l'utilisation d'une redirection -->
-<!- 301 côté serveur.-->
-<!-		META NAME="Indentifier-URL" CONTENT="http://cyberzoide.developpez.com/"> -> une fois sorti du ssh -->
+    	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>  	
+    	<meta name="keywords" content="Acteurs, Actrices, Actorzzz, Actrïzzz, topTenzzz, Armanger, Parmenon, Marechal"/>
+    	<meta name="description" content="Site décalé de référencement et d'informations concernant des acteurs (Actorzzz) et des actrices (Actricszzz), qui permet -en tant que membre- de voter pour faire apparaître dans le topTenzzz les éluzzz de votre coeur"/>
+		<meta name="robots" content= "noodp" />
+		<META name="Date" content="Wed, 16 March 2015 00:00:00"> 
+		<META name="owner" content="Armanger, Maréchal, Parminion">
+		
+		<! link rel="stylesheet" type="text/css" href="http://site.com/resource/doc.css" />
+		
 
                                 
-        <title>	{% block title %}	{% endblock %}	</title>
-        {% block stylesheets %}	{% endblock %}
+        <title>{% block title %}	{% endblock %}</title>
+        
+        {% block stylesheets %}		{% endblock %}
     </head>
     <body>
         {% block body %}	{% endblock %}
