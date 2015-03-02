@@ -9,7 +9,7 @@ class MemberzzzController extends Controller
 {
     public function indexAction()
     {
-       return $this->render('ActorzzzBundle:MembreView:Membre.html.twig');
+       return $this->render('ActorzzzBundle:ActeurView:Membre.html.twig');
 
     }
 }
