@@ -1,3 +1,19 @@
 actorzzz_homepage:
-    path:     /home
+    path : /home
     defaults: { _controller: ActorzzzBundle:Accueil:index }
+
+actorzzz_acteur:
+    path : /acteurzzz
+    defaults: { _controller: ActorzzzBundle:Actorzzz:index }
+
+actorzzz_actrice:
+    path : /actrizzz
+    defaults: { _controller: ActorzzzBundle:Actrizzz:index }
+
+actorzzz_membre:
+    path : /memberzzz
+    defaults: { _controller: ActorzzzBundle:Memberzzz:index }
+
+actorzzz_contact:
+    path : /contactzzz
+    defaults: { _controller: ActorzzzBundle:Contactzzz:index }
