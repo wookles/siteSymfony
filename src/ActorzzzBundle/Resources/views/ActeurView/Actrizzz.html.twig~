@@ -5,8 +5,8 @@ Des acteurzzz partout
 {% endblock %} 
    
 {% block body %}
-<h1>Liste des acteurzzzs !</h1>    
+<h1>Liste des actrizzz !</h1>    
 	<p>
-		Voici la page pour voir notre liste d'acteurzzz
+		Voici la page pour voir notre liste d'actrizzz
 	</p>
 {% endblock %}
