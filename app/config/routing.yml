@@ -9,5 +9,5 @@ login:
 login_check:
     pattern:   /login_check
 
- logout:
+logout:
     pattern:   /logout

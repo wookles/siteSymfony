@@ -127,14 +127,53 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // Accueil_site
-        if ($pathinfo === '/Actorzzz') {
-            return array (  '_controller' => 'Test\\PremierBundle\\Controller\\AdvertController::indexAction',  '_route' => 'Accueil_site',);
+        // actorzzz_homepage
+        if ($pathinfo === '/home') {
+            return array (  '_controller' => 'ActorzzzBundle\\Controller\\AccueilController::indexAction',  '_route' => 'actorzzz_homepage',);
         }
 
-        // Page2
-        if ($pathinfo === '/page2') {
-            return array (  '_controller' => 'Test\\PremierBundle\\Controller\\Page2Controller::indexAction',  '_route' => 'Page2',);
+        if (0 === strpos($pathinfo, '/act')) {
+            // actorzzz_acteur
+            if ($pathinfo === '/acteurzzz') {
+                return array (  '_controller' => 'ActorzzzBundle\\Controller\\ActorzzzController::indexAction',  '_route' => 'actorzzz_acteur',);
+            }
+
+            // actorzzz_actrice
+            if ($pathinfo === '/actrizzz') {
+                return array (  '_controller' => 'ActorzzzBundle\\Controller\\ActrizzzController::indexAction',  '_route' => 'actorzzz_actrice',);
+            }
+
+        }
+
+        // actorzzz_membre
+        if ($pathinfo === '/memberzzz') {
+            return array (  '_controller' => 'ActorzzzBundle\\Controller\\MemberzzzController::indexAction',  '_route' => 'actorzzz_membre',);
+        }
+
+        // actorzzz_contact
+        if ($pathinfo === '/contactzzz') {
+            return array (  '_controller' => 'ActorzzzBundle\\Controller\\ContactzzzController::indexAction',  '_route' => 'actorzzz_contact',);
+        }
+
+        if (0 === strpos($pathinfo, '/log')) {
+            if (0 === strpos($pathinfo, '/login')) {
+                // login
+                if ($pathinfo === '/login') {
+                    return array (  '_controller' => 'AcmeSecurityBundle:Security:login',  '_route' => 'login',);
+                }
+
+                // login_check
+                if ($pathinfo === '/login_check') {
+                    return array('_route' => 'login_check');
+                }
+
+            }
+
+            // logout
+            if ($pathinfo === '/logout') {
+                return array('_route' => 'logout');
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
