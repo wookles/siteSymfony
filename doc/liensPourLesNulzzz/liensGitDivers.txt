@@ -1,0 +1,3 @@
+FAQ : 
+Je m'appelle chachat'minion ou Pas(r)'minion et je dois delete des commits, comment je fais ?
+	-> http://www.mon-code.net/article/41/pense-bete-git-suite-reparer-les-erreurs
