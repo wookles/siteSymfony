@@ -5,11 +5,11 @@ namespace ActorzzzBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class MemberzzzController extends Controller
+class ActrizzzController extends Controller
 {
     public function indexAction()
     {
-       return $this->render('ActorzzzBundle:MembreView:Membre.html.twig');
+       return $this->render('ActrizzzBundle:ActeurView:Actrizzz.html.twig');
 
     }
 }
