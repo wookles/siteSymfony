@@ -16,4 +16,4 @@ actorzzz_membre:
 
 actorzzz_contact:
     path : /contactzzz
-    defaults: { _controller: ActorzzzBundle:Contactzzz:index }
+    defaults: { _controller: ActorzzzBundle:Contactzzz:new }
