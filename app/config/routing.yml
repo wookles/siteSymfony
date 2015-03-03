@@ -2,9 +2,12 @@ Actorzzz:
     resource: "@ActorzzzBundle/Resources/config/routing.yml"
     prefix:   /
 
+home:
+    pattern:   /home
+
 login:
     pattern:   /login
-    defaults:  { _controller: AcmeSecurityBundle:Security:login }
+    defaults:  { _controller: ActorzzzBundle:Security:login }
 
 login_check:
     pattern:   /login_check
