@@ -47,7 +47,7 @@ class ContactzzzController extends Controller
 
     return $this->render('ActorzzzBundle:ContactView:email.html.twig');
 	}
-	/*
+	*/
 	
 }
 ?>
