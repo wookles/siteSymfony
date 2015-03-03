@@ -34,5 +34,20 @@ class ContactzzzController extends Controller
     		
     	return $this->render('ActorzzzBundle:ContactView:Contact.html.twig', array('form' => $form->createView(),));
 	}
+	
+	/*public function messageAction(){
+	
+    $message = \Swift_Message::newInstance()
+        ->setSubject('Hello Email')
+        ->setFrom('charlie.Marechal53@gmail.fr')
+        ->setTo('cmarechal53@hotmail.fr')
+        ->setBody($this->renderView('ActorzzzBundle:ContactView:email.html.twig'))
+    ;
+    $this->get('mailer')->send($message);
+
+    return $this->render('ActorzzzBundle:ContactView:email.html.twig');
+	}
+	/*
+	
 }
 ?>
