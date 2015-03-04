@@ -3,7 +3,8 @@
 ## Objectifs principaux :
 - créer un site qui référence différents acteurs et actrices
 - offrir un site de qualité écrit en XHTML5 "correct"
-- avoir une appréhension améliorée des technologies utilisée
+- acquérir une appréhension améliorée des technologies utilisées
+- acquérir une expérience supplémentaire en travail en équipe
 
 ## Objectifs secondaires
 - avoir une superbe note au module
