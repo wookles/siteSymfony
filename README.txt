@@ -1,18 +1,29 @@
 # actorzzz.com
 
-## Objectifs :
+## Objectifs principaux :
 - créer un site qui référence différents acteurs et actrices
-- offrir un site de qualité qui répond aux certifications W3C, HTML5, etc.
+- offrir un site de qualité écrit en XHTML5 "correct"
+- avoir une appréhension améliorée des technologies utilisée
 
-## Fonctionnalités
+## Objectifs secondaires
+- avoir une superbe note au module
+
+## Fonctionnalités principales
 - permettre d'accéder à une **biographie** et une **filmographie** résumant leurs parcours
-- pouvoir autoriser les visiteurs à se logger, ce qui va leur donne le statut de *memberzzz*
-- permettre aux *memberzzz* de pouvoir voter pour les acteurs et actrices préférés, une fois par jour, dans le cadre du **VIP'zzz my choice**
+- pouvoir autoriser les visiteurs à se logger, ce qui va leur donne le statut de **memberzzz**
+- faire en sorte que les questionnaires erronés n'effacent pas les champs renseignés par les aspirant **memberzzz**
+- permettre aux *memberzzz* de pouvoir voter pour leurs acteurs et actrices préférés, une fois par jour, dans le cadre du **VIP'zzz my choice**
+- accéder au **topTenzzz**, qui liste par nombre de votes les différents Actorzzz et Actrizzz
+
+## Fonctionnalités optionnelles
+- faire valider le code XHTML5 par W3C
+- faire valider le code CSS  par W3C
+- profiter des nouveaux apports de HTML5 avec par exmple l'intégration d'une vidéo sur le site
 
 ##toolzzz
 - GITHUB
-- Symfony2 / php / twig / jeanPasseEtDesMeilleures
-- PostgreSQL
+- Symfony2 incluant  php / twig / Doctrine / Bootstrap
+- SQLite3
 
 [lien] (http://actorzzz.com)
 *(sujet a modifications ultérieures multiples)*
