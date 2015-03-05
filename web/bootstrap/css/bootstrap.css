@@ -13,6 +13,11 @@ html {
 body {
   margin: 0;
 }
+
+form {
+	background-color: White;
+}
+	
 article,
 aside,
 details,
@@ -63,7 +68,8 @@ dfn {
 h1 {
   margin: .67em 0;
   font-size: 2em;
-  
+  text-align: center;
+  color: #DAA520;
 
 }
 mark {
@@ -1079,8 +1085,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color: GoldenRod;
+  background-color: Black;
 }
 input,
 button,
@@ -1091,7 +1097,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: White;
   text-decoration: none;
 }
 a:hover,
@@ -1280,6 +1286,7 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  color: White;
 }
 .lead {
   margin-bottom: 20px;
