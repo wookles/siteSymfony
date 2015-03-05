@@ -1,7 +1,15 @@
-sujets à choisir :
+Pour la/les séances à suivre : 
 
-- html(utiliser bootsrap et respecter XHTML5) / css (respecter normes imposées par W3C)
-- s'occuper des livrables (/doc : diagramme de classes, MEA)
+- html (utiliser bootstrap et respecter XHTML5) / css (respecter normes imposées par W3C et utiliser un générateur de css)
+- s'occuper des livrables (doc/ : diagramme de classes, MEA)
 - chercher tous les liens nécessaires puis télécharger toutes les images et vidéos
-			
-				
+	-> images dans app/images/
+	-> vidéos dans app/videos/
+- créer classes puis créer dépendances
+- fixture
+- avec genre gimp, détourer images dans app/Resources/images pour pouvoir les intégrer au layout choisi
+- 2nde base de données en langue anglaise
+
+
+Philippe :
+voir pour posséder une URL du genre www.Actorzzz.com
