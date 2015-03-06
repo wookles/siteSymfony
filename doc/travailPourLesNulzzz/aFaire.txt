@@ -1,6 +1,7 @@
 Pour la/les séances à suivre : 
 
-- html (utiliser bootstrap et respecter XHTML5) / css (respecter normes imposées par W3C et utiliser un générateur de css)
+
+- html (utiliser bootstrap et respecter XHTML5) / css (respecter normes imposées par W3C et utiliser un générateur de css) [charlie début de Boostrap le 05/03/2015 à 16h45]
 - s'occuper des livrables (doc/ : diagramme de classes, MEA)
 - chercher tous les liens nécessaires puis télécharger toutes les images et vidéos
 	-> images dans app/images/
@@ -13,3 +14,4 @@ Pour la/les séances à suivre :
 
 Philippe :
 voir pour posséder une URL du genre www.Actorzzz.com
+demander .DS_STORE
