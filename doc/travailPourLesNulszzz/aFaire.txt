@@ -11,6 +11,7 @@ Priorites :
                 - MEA.asta
                 - pb 2nde bdd en anglais
                 - trouver site pour format image ok et videos HD, soccuper de lhistoire des avatars       
+		- gerer lhistoire de origin master
 
 Pour la/les séances à suivre : 
 
