@@ -27,4 +27,5 @@ Pour la/les séances à suivre :
 - avec genre gimp, détourer images dans app/Resources/images pour pouvoir les intégrer au layout choisi
 - 2nde base de données en langue anglaise
 - gérer diagramme de classe / nettoyer MR
+- creer un fichier/solution pour valider avancée des travaux, notamment vérification travail effectué/fonctionnalités prévues (principales ET optionnelles)
 
