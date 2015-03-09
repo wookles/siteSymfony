@@ -1,11 +1,12 @@
 Priorites :
 
-    damien :    - probleme de MR pas exhaustif (format de date pas max pour les etrangers qui souhaitent devenir memberzzz.
+    damien :    - probleme de MR pas exhaustif (format de date pas max pour les etrangers qui souhaitent devenir memberzzz. Du coup dans ~/Entity manque la table adresse ...
                 -> ~/siteSymfony/doc/livrables/modeleRelationnel.odt a rectifier et a faire voter
 
     charlie :   - voir si Bootstrap ok avec CSS definitivement, et idem pour HTML (XHTML5)
     
-    phil :      - voir pour posséder une URL du genre www.Actorzzz.com
+    phil :      - nettoyer suite au travail de damien modeleRelationnel.odt
+    			- voir pour posséder une URL du genre www.Actorzzz.com
                 - demander .DS_STORE
                 - surveiller charlie et damien sur les deux points cites
                 - MEA.asta
@@ -25,3 +26,5 @@ Pour la/les séances à suivre :
 - fixture
 - avec genre gimp, détourer images dans app/Resources/images pour pouvoir les intégrer au layout choisi
 - 2nde base de données en langue anglaise
+- gérer diagramme de classe / nettoyer MR
+
