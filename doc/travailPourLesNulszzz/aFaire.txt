@@ -12,8 +12,11 @@ Priorites :
                 - MEA.asta
                 - pb 2nde bdd en anglais
                 - trouver site pour format image ok et videos HD, soccuper de lhistoire des avatars       
-		- gerer lhistoire de origin master
-
+				- gerer lhistoire de origin master
+				- gérer l'histoire de composer.phar manquant
+				- pkoi sur le git ds composer.json ya un truc marqué en rouge ???
+				- dégager le fichier modeleRelationnel.txt
+				
 Pour la/les séances à suivre : 
 
 
