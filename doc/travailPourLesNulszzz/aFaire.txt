@@ -4,16 +4,17 @@ Priorites :
                 -> ~/siteSymfony/doc/livrables/modeleRelationnel.odt a rectifier et a faire voter
 
     charlie :   - voir si Bootstrap ok avec CSS definitivement, et idem pour HTML (XHTML5)
+    			- voir mail qui va etre transféré ce jour dans boite de l'ent
+    			- repondre a la question : ou est composer.phar
     
-    phil :      - nettoyer suite au travail de damien modeleRelationnel.odt
+    phil :      - nettoyer suite au travail de damien (pas encore fait) modeleRelationnel.odt
     			- voir pour posséder une URL du genre www.Actorzzz.com
                 - demander .DS_STORE
-                - surveiller charlie et damien sur les deux points cites
                 - MEA.asta
-                - pb 2nde bdd en anglais
+                - pb 2nde bdd en anglais => cf mail de m. jousse
                 - trouver site pour format image ok et videos HD, soccuper de lhistoire des avatars       
 				- gerer lhistoire de origin master
-				- gérer l'histoire de composer.phar manquant
+				- gérer l'histoire de composer.phar manquant (cf travail de charlie + mails de m. jousse)
 				- pkoi sur le git ds composer.json ya un truc marqué en rouge ???
 				- dégager le fichier modeleRelationnel.txt
 				
