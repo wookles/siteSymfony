@@ -6572,4 +6572,12 @@ button.close {
     display: none !important;
   }
 }
+.imageBanniere
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+	
+
 /*# sourceMappingURL=bootstrap.css.map */
