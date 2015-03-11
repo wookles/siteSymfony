@@ -5,7 +5,7 @@ Priorités :
     			- trouver un budget pour la règle 8
     			- essayer de serrer la main des gens avant de partir et essayer de dire en face à philzzz quand il te "spam" de trop, plutôt que le dire à charlie, qui le dit à philzzz, qui est triste
     			
-    charlie :   - html (utiliser bootstrap et respecter XHTML5) / css (respecter normes imposées par W3C pour html et utiliser un générateur de css) [charlie début de Boostrap le 05/03/2015 à 16h45]
+    charlie :   - html (utiliser bootstrap et respecter XHTML5) / css (respecter normes imposées par W3C pour html et utiliser un générateur de css) [début de Boostrap le 05/03/2015 à 16h45]
     			- essayer de travailler en mode teamzzz et être de bonne humeur sur un horizon de 3h 
     			- trouver un budget pour la règle 8*
 
@@ -16,7 +16,7 @@ Priorités :
                 - images (y compris la gestion des avatarzzz), vidéos, biographie, synopsis
 				- dégager le fichier modeleRelationnel.txt
 				- creer un fichier/solution pour valider avancée des travaux, notamment vérification travail effectué/fonctionnalités prévues (principales ET optionnelles)
-				
+				- essayer de faire la paizzz avec Charlizzz et Damienzzz si ça les tente, sinon (= si je penszzz quils penszzz que je suis trop perchézzz et si je penszzz qu'ils penszzz que j'ai dépassé le point de non retourzzz de lamitiézzz telle qu'ils la voient) qu'il aillent se faire enc*ler.
 				
 Pour la/les séances à suivre : 
 
