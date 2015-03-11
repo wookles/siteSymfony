@@ -22,39 +22,53 @@ class memberzzz
     private $id;
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="typeMemberzzz", type="integer")
+     */
+    private $typeMemberzzz;
+
+    /**
      * @var string
      *
-     * @ORM\Column(name="pseudo_memberzzz", type="string", length=255)
+     * @ORM\Column(name="pseudoMemberzzz", type="string", length=255)
      */
     private $pseudoMemberzzz;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="pass_memberzzz", type="string", length=255)
+     * @ORM\Column(name="passMemberzzz", type="string", length=255)
      */
     private $passMemberzzz;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mel_memberzzz", type="string", length=255)
+     * @ORM\Column(name="melMemberzzz", type="string", length=255)
      */
     private $melMemberzzz;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="id_image", type="integer")
+     * @ORM\Column(name="idImage", type="integer")
      */
     private $idImage;
 
     /**
-     * @var string
+     * @var integer
      *
-     * @ORM\Column(name="id_adresse", type="string", length=255)
+     * @ORM\Column(name="idAdresse", type="integer")
      */
     private $idAdresse;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateAnniv", type="date")
+     */
+    private $dateAnniv;
 
 
     /**
@@ -65,6 +79,29 @@ class memberzzz
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set typeMemberzzz
+     *
+     * @param integer $typeMemberzzz
+     * @return memberzzz
+     */
+    public function setTypeMemberzzz($typeMemberzzz)
+    {
+        $this->typeMemberzzz = $typeMemberzzz;
+
+        return $this;
+    }
+
+    /**
+     * Get typeMemberzzz
+     *
+     * @return integer 
+     */
+    public function getTypeMemberzzz()
+    {
+        return $this->typeMemberzzz;
     }
 
     /**
@@ -162,7 +199,7 @@ class memberzzz
     /**
      * Set idAdresse
      *
-     * @param string $idAdresse
+     * @param integer $idAdresse
      * @return memberzzz
      */
     public function setIdAdresse($idAdresse)
@@ -175,10 +212,33 @@ class memberzzz
     /**
      * Get idAdresse
      *
-     * @return string 
+     * @return integer 
      */
     public function getIdAdresse()
     {
         return $this->idAdresse;
+    }
+
+    /**
+     * Set dateAnniv
+     *
+     * @param \DateTime $dateAnniv
+     * @return memberzzz
+     */
+    public function setDateAnniv($dateAnniv)
+    {
+        $this->dateAnniv = $dateAnniv;
+
+        return $this;
+    }
+
+    /**
+     * Get dateAnniv
+     *
+     * @return \DateTime 
+     */
+    public function getDateAnniv()
+    {
+        return $this->dateAnniv;
     }
 }

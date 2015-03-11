@@ -1,6 +1,6 @@
 Priorités :
 
-    damien :    - finir inscrptions avec md5
+    damien :    - finir inscrptions avec md5, du coup supprimer un des deux fichiers Formulaire*.php
     			- regarder quelles diff avec une autre techno de cryptage
     			- trouver un budget pour la règle 8
     			- essayer de serrer la main des gens avant de partir et essayer de dire en face à philzzz quand il te "spam" de trop, plutôt que le dire à charlie, qui le dit à philzzz, qui est triste
@@ -16,7 +16,7 @@ Priorités :
                 - images (y compris la gestion des avatarzzz), vidéos, biographie, synopsis
 				- dégager le fichier modeleRelationnel.txt
 				- creer un fichier/solution pour valider avancée des travaux, notamment vérification travail effectué/fonctionnalités prévues (principales ET optionnelles)
-				- essayer de faire la paizzz avec Charlizzz et Damienzzz si ça les tente, sinon (= si je penszzz quils penszzz que je suis trop perchézzz et si je penszzz qu'ils penszzz que j'ai dépassé le point de non retourzzz de lamitiézzz telle qu'ils la voient) qu'il aillent se faire enc*ler.
+				- essayer de faire la paizzz avec Charlizzz et Damienzzz si ça les tente, sinon (= si je penszzz quils penszzz que je suis trop perchézzz et si je penszzz qu'ils penszzz que j'ai dépassé le point de non retourzzz de lamitiézzz telle qu'ils la voient) qu'il aillent se faire enc*ler (surtout les deux).
 				
 Pour la/les séances à suivre : 
 
@@ -25,11 +25,11 @@ Pour la/les séances à suivre :
 	-> images dans app/images/  OK mais pas ok pour reste du layout, page par page
 	-> vidéos dans app/videos/
 	-> remplir exhaustivement les22.ods
-- créer classes puis créer dépendances
+- créer dépendances entre classes
 - fixtures
 - avec genre gimp, détourer images dans app/Resources/images pour pouvoir les intégrer au layout choisi
 - 2nde base de données en langue anglaise
-- gérer diagrammes de classe / nettoyer MR
+- gérer diagramme de classe
 - s'occuper des avatars
 - fonctionnalités proposée par matthias : like, commentaires, following, messages entre memberzzz, mariageszzz, cookies, classement (multiples critères)
 

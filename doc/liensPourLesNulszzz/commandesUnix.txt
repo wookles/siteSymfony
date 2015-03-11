@@ -1,0 +1,5 @@
+FAQ :
+Je souhaite supprimer tous les fichiers de sauvegarde générés automatiquement par le système d'exploration de mon MAC, comment faire ?
+	->find . -name ._* -print0 | xargs -0 git rm -f --ignore-unmatch
+
+	
