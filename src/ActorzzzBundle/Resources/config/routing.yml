@@ -17,3 +17,7 @@ actorzzz_membre:
 actorzzz_contact:
     path : /contactzzz
     defaults: { _controller: ActorzzzBundle:Contactzzz:new }
+
+actorzzz_inscription:
+    path : /inscriptionzzz
+    defaults: { _controller: ActorzzzBundle:Inscription:new }
