@@ -1,26 +1,21 @@
-/*
+// src/ActorzzzBundle/DataFixtures/ORM/LoadMemberzzzData.php
 
-// src/ActorzzzBundle/DataFixtures/ORM/LoadUserData.php
-
-namespace Acme\HelloBundle\DataFixtures\ORM;
+namespace ActorzzzBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Acme\HelloBundle\Entity\User;
+use ActorzzzBundle\Entity\memberzzz;
 
-class LoadUserData implements FixtureInterface
-{
-    *
-     * {@inheritDoc}
-     *
-    public function load(ObjectManager $manager)
-    {
-        $userAdmin = new User();
-        $userAdmin->setUsername('admin');
-        $userAdmin->setPassword('test');
+class LoadMemberzzzData implements FixtureInterface{
+     	/**
+     	* {@inheritDoc}
+     	*/
+	public function load(ObjectManager $manager){
+        $memberzzzAdmin = new Memberzzz();
+        $memberzzzAdmin->setMemberzzzname('phil');
+        $memberzzzAdmin->setPassword('youpi');
 
-        $manager->persist($userAdmin);
+        $manager->persist($memberzzzAdmin);
         $manager->flush();
     }
 }
-*/

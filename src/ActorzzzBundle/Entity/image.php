@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * image
  *
- * @ORM\Table()
+ * @ORM\Table(name="image")
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\imageRepository")
  */
 class image

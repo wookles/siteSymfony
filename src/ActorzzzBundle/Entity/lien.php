@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * lien
  *
- * @ORM\Table()
+ * @ORM\Table(name="lien")
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\lienRepository")
  */
 class lien

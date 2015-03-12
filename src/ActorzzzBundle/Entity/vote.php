@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * vote
  *
- * @ORM\Table()
+ * @ORM\Table(name="vote")
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\voteRepository")
  */
 class vote
