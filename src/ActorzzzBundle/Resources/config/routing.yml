@@ -20,4 +20,4 @@ actorzzz_contact:
 
 actorzzz_inscription:
     path : /inscriptionzzz
-    defaults: { _controller: ActorzzzBundle:Inscription:new }
+    defaults: { _controller: ActorzzzBundle:Inscription:add }
