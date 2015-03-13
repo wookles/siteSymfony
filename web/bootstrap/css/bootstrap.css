@@ -6576,8 +6576,14 @@ button.close {
 {
 	display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
-	
+
+lienDroite
+{
+	display: auto-inline;
+	float: right;
+}
+		
 
 /*# sourceMappingURL=bootstrap.css.map */
