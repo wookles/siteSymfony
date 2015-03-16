@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class memberzzzType extends AbstractType
+class MembreType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -15,10 +15,10 @@ class memberzzzType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('typeMemberzzz')
-            ->add('pseudoMemberzzz')
-            ->add('passMemberzzz')
-            ->add('melMemberzzz')
+            ->add('typeMembre')
+            ->add('pseudoMembre')
+            ->add('passMembre')
+            ->add('melMembre')
             ->add('idImage')
             ->add('idAdresse')
             ->add('dateAnniv')
@@ -31,7 +31,7 @@ class memberzzzType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'ActorzzzBundle\Entity\memberzzz'
+            'data_class' => 'ActorzzzBundle\Entity\Membre'
         ));
     }
 
@@ -40,6 +40,6 @@ class memberzzzType extends AbstractType
      */
     public function getName()
     {
-        return 'actorzzzbundle_memberzzz';
+        return 'actorzzzbundle_membre';
     }
 }

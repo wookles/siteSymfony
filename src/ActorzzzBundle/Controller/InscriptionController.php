@@ -3,8 +3,8 @@
 
 namespace ActorzzzBundle\Controller;
 
-use ActorzzzBundle\Entity\memberzzz;
-use ActorzzzBundle\Form\memberzzzType;
+use ActorzzzBundle\Entity\Membre;
+use ActorzzzBundle\Form\MembreType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -12,8 +12,8 @@ class InscriptionController extends Controller
 {
   public function addAction(Request $request)
   {
-    $inscription = new memberzzz();
-    $form = $this->get('form.factory')->create(new memberzzzType(), $inscription);
+    $inscription = new Membre();
+    $form = $this->get('form.factory')->create(new MembreType(), $inscription);
 
     if ($form->handleRequest($request)->isValid()) {
       $em = $this->getDoctrine()->getManager();
