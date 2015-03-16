@@ -1,5 +1,6 @@
 {% extends '::base.html.twig' %}
 
+
 {% block title %}
 Actorzzz vous souhaite la bienvenue. Actorzzzz : un beau site et bien plus encorezzz !
 {% endblock %} 
@@ -10,4 +11,48 @@ Actorzzz vous souhaite la bienvenue. Actorzzzz : un beau site et bien plus encor
 	<p>
 		Bienvenue sur le tout nouveau site de référencement pour les fanszzz d'actorszzz et actriszzz. 
 	</p>
+	<script type="text/javascript">
+
+	var x=0;
+
+	function rotate(num){
+	fs=document.ff.slide;
+	x=num%fs.length;
+	if(x<0) x=fs.length-1;
+	document.images.show.src=fs.options[x].value;
+	fs.selectedIndex=x;}
+
+	function auto() {
+	if(document.ff.fa.value == "Stop"){
+	rotate(++x);setTimeout("auto()", 5000);}}
+	</script>
+	
+	
+	<form class="centrer" name="ff">
+	<table cellpadding="3" style="border:1px black solid;border-collapse:collapse;">
+	<tr><th align="center">Les acteurs</th></tr>
+
+	<tr><td align="center">
+	<img src="http://fr.web.img1.acsta.net/r_640_600/b_1_d6d6d6/pictures/14/08/07/23/22/525180.jpg" name="show">
+	</td></tr>
+
+	<tr><td align="center" style="border:1px black solid;">
+	<select name="slide" onChange="rotate(this.selectedIndex);">
+	<option value="{{ asset('images/actorzzz/bPitt.jpg') }}">brad pitt</option>
+	<option value="{{ asset('images/actorzzz/jDepp.jpg') }}">Johnny Depp</option>
+	<option value="{{ asset('images/actrizzz/cDiaz.jpg') }}">Cameron Diaz</option>
+	<option value="{{ asset('images/actrizzz/jAlba.jpg') }}">Jessica Alba</option>
+	<option value="{{ asset('images/actorzzz/fDamiens.jpg') }}">François Damiens</option>
+	<option value="{{ asset('images/actrizzz/nPortman.jpg') }}">Nathalie Portman</option>
+	</select>
+	</td></tr>
+
+	<tr><td align="center" style="border:2px black solid;">
+	<input type="button" onclick="rotate(0);" value="ll&lt;&lt;" title="Jump to beginning" />
+	<input type="button" onclick="rotate(x-1);" value="&lt;&lt;" title="Last Picture" />
+	<input type="button" name="fa" onClick="this.value=((this.value=='Stop')?'Start':'Stop');auto();" value="Start" title="Autoplay" style="width:75px;" />
+	<input type="button" onclick="rotate(x+1);" value="&gt;&gt;" title="Next Picture" />
+	<input type="button" onclick="rotate(this.form.slide.length-1);" value="&gt;&gt;ll" title="Jump to end" />
+	</td></tr></table></form>
+	
 {% endblock %}
