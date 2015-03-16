@@ -1787,7 +1787,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>5506eeb7af4a8</argument>
+            <argument>55070e1ecd7fd</argument>
           </service>
         </argument>
       </argument>
@@ -1891,7 +1891,7 @@
     </service>
     <service id="security.user.provider.concrete.main" class="Symfony\Bridge\Doctrine\Security\User\EntityUserProvider" public="false">
       <argument type="service" id="doctrine"/>
-      <argument>ActorzzzBundle\Entity\memberzzz</argument>
+      <argument>ActorzzzBundle\Entity\Membre</argument>
       <argument>username</argument>
       <argument>null</argument>
     </service>
@@ -2038,7 +2038,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>5506eeb7af4a8</argument>
+            <argument>55070e1ecd7fd</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2919,7 +2919,7 @@
     </service>
     <service id="security.encoder_factory" class="Symfony\Component\Security\Core\Encoder\EncoderFactory">
       <argument type="collection">
-        <argument key="ActorzzzBundle\Entity\memberzzz" type="collection">
+        <argument key="ActorzzzBundle\Entity\Membre" type="collection">
           <argument key="class">%security.encoder.digest.class%</argument>
           <argument key="arguments" type="collection">
             <argument>md5</argument>
