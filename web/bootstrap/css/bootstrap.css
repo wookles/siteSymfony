@@ -17,6 +17,17 @@ body {
 form {
 	background-color: White;
 }
+
+form.centrer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+	text-align: center;
+}
+
+option.redimenssion	{
+	width: 200px;
+}
 	
 article,
 aside,
