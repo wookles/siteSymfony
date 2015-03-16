@@ -152,14 +152,24 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // actorzzz_contact
         if ($pathinfo === '/contactzzz') {
-            return array (  '_controller' => 'ActorzzzBundle\\Controller\\ContactzzzController::indexAction',  '_route' => 'actorzzz_contact',);
+            return array (  '_controller' => 'ActorzzzBundle\\Controller\\ContactzzzController::newAction',  '_route' => 'actorzzz_contact',);
+        }
+
+        // actorzzz_inscription
+        if ($pathinfo === '/inscriptionzzz') {
+            return array (  '_controller' => 'ActorzzzBundle\\Controller\\InscriptionController::addAction',  '_route' => 'actorzzz_inscription',);
+        }
+
+        // home
+        if ($pathinfo === '/home') {
+            return array('_route' => 'home');
         }
 
         if (0 === strpos($pathinfo, '/log')) {
             if (0 === strpos($pathinfo, '/login')) {
                 // login
                 if ($pathinfo === '/login') {
-                    return array (  '_controller' => 'AcmeSecurityBundle:Security:login',  '_route' => 'login',);
+                    return array (  '_controller' => 'ActorzzzBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login',);
                 }
 
                 // login_check
