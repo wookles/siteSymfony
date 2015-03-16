@@ -14,10 +14,6 @@ body {
   margin: 0;
 }
 
-form {
-	background-color: White;
-}
-
 form.centrer {
 	margin-left: auto;
 	margin-right: auto;
