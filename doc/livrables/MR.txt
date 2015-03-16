@@ -1,5 +1,6 @@
 Modèle relationnel résultant du MEA etabli (cf. modeleEntiteAssociation.asta)
 
+ancien
 
 lien(id_lien, typeLien, nomLien);
 
@@ -20,3 +21,25 @@ adresse(id, typeMemberzzz, champ1, champ2, champ3, champ4, champ5, champ6);
 admin(id, melContact, idImage);
 
 contact(#id, #idMemberzzz, message);
+
+
+
+nouveau
+
+acteur(id, nom, prenom, sexe, biographie, filmographie, #idImage, #idFilm);
+
+filmPhare(id, titre, anneeSortie, synopsis, #idImage, #IdVideo);
+
+image(id, lien);
+
+video(id, lien);
+
+membre(id, genreMembre, pseudoMembre, passMembre, melMembre, #idImage, #idAdresse, dateAnniv);
+
+vote(id, #idMembre, #idActeur);
+
+adresse(id, typeMembre, champ1, champ2, champ3, champ4, champ5, champ6);
+
+admin(id, melAdmin, #idImage);
+
+contact(id, #idMembre, #idAdmin, message);
