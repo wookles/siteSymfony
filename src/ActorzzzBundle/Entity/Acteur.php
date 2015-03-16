@@ -58,14 +58,14 @@ class Acteur
 
     /**
      * @var integer
-     *
+     * @ORM\OneToOne(targetEntity="ActorzzzBundle\Entity\image", cascade={"persist"})
      * @ORM\Column(name="idImage", type="integer")
      */
     private $idImage;
 
     /**
      * @var integer
-     *
+     * @ORM\OneToOne(targetEntity="ActorzzzBundle\Entity\FilmPhare", cascade={"persist"})
      * @ORM\Column(name="idFilm", type="integer")
      */
     private $idFilm;
