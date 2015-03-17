@@ -152,7 +152,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // actorzzz_contact
         if ($pathinfo === '/contactzzz') {
-            return array (  '_controller' => 'ActorzzzBundle\\Controller\\ContactzzzController::newAction',  '_route' => 'actorzzz_contact',);
+            return array (  '_controller' => 'ActorzzzBundle\\Controller\\ContactzzzController::addAction',  '_route' => 'actorzzz_contact',);
         }
 
         // actorzzz_inscription
