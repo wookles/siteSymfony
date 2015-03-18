@@ -8,11 +8,13 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Image
  *
- * @ORM\Table()
+ * @ORM\Table(name = "Image")
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\ImageRepository")
  */
 class Image
 {
+	
+
     /**
      * @var integer
      *

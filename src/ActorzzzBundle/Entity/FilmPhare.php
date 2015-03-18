@@ -13,6 +13,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class FilmPhare
 {
+	///////////////
+	// Variables //
+	///////////////
+	
     /**
      * @var integer
      *
@@ -58,6 +62,10 @@ class FilmPhare
     private $lienVideo;
 
 
+	/////////////
+	// Getters //
+	/////////////
+	
     /**
      * Get id
      *
@@ -67,7 +75,62 @@ class FilmPhare
     {
         return $this->id;
     }
-
+	
+	/**
+     * Get synopsis
+     *
+     * @return string 
+     */
+    public function getSynopsis()
+    {
+        return $this->synopsis;
+    }
+    
+    /**
+     * Get anneeSortie
+     *
+     * @return \DateTime 
+     */
+    public function getAnneeSortie()
+    {
+        return $this->anneeSortie;
+    }
+	
+	/**
+     * Get titre
+     *
+     * @return string 
+     */
+    public function getTitre()
+    {
+        return $this->titre;
+    }
+	
+	/**
+     * Get idImage
+     *
+     * @return integer 
+     */
+    public function getIdImage()
+    {
+        return $this->idImage;
+    }
+    
+    /**
+     * Get lienVideo
+     *
+     * @return string 
+     */
+    public function getLienVideo()
+    {
+        return $this->lienVideo;
+    }
+    
+    
+    /////////////
+	// Setters //
+	/////////////
+    
     /**
      * Set titre
      *
@@ -79,16 +142,6 @@ class FilmPhare
         $this->titre = $titre;
 
         return $this;
-    }
-
-    /**
-     * Get titre
-     *
-     * @return string 
-     */
-    public function getTitre()
-    {
-        return $this->titre;
     }
 
     /**
@@ -105,16 +158,6 @@ class FilmPhare
     }
 
     /**
-     * Get anneeSortie
-     *
-     * @return \DateTime 
-     */
-    public function getAnneeSortie()
-    {
-        return $this->anneeSortie;
-    }
-
-    /**
      * Set synopsis
      *
      * @param string $synopsis
@@ -125,16 +168,6 @@ class FilmPhare
         $this->synopsis = $synopsis;
 
         return $this;
-    }
-
-    /**
-     * Get synopsis
-     *
-     * @return string 
-     */
-    public function getSynopsis()
-    {
-        return $this->synopsis;
     }
 
     /**
@@ -151,16 +184,6 @@ class FilmPhare
     }
 
     /**
-     * Get idImage
-     *
-     * @return integer 
-     */
-    public function getIdImage()
-    {
-        return $this->idImage;
-    }
-
-    /**
      * Set lienVideo
      *
      * @param string $lienVideo
@@ -172,14 +195,38 @@ class FilmPhare
 
         return $this;
     }
+    
+    /////////////
+    // Mapping //
+	/////////////
+	/**
+     * @ORM\ManyToOne(targetEntity="Acteur", inversedBy="products")
+     * @ORM\JoinColumn(name="acteur_id", referencedColumnName="id")
+     */
+    protected $acteur;
+
+
 
     /**
-     * Get lienVideo
+     * Set acteur
      *
-     * @return string 
+     * @param \ActorzzzBundle\Entity\Acteur $acteur
+     * @return FilmPhare
      */
-    public function getLienVideo()
+    public function setActeur(\ActorzzzBundle\Entity\Acteur $acteur = null)
     {
-        return $this->lienVideo;
+        $this->acteur = $acteur;
+
+        return $this;
+    }
+
+    /**
+     * Get acteur
+     *
+     * @return \ActorzzzBundle\Entity\Acteur 
+     */
+    public function getActeur()
+    {
+        return $this->acteur;
     }
 }

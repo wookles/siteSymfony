@@ -13,6 +13,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Acteur
 {
+	///////////////
+	// Variables //
+	///////////////
+	
     /**
      * @var integer
      *
@@ -72,7 +76,11 @@ class Acteur
     private $idFilm;
 
 
-    /**
+	/////////////
+	// Getters //
+	/////////////
+	
+	/**
      * Get id
      *
      * @return integer 
@@ -81,7 +89,82 @@ class Acteur
     {
         return $this->id;
     }
-
+	
+	/**
+     * Get nom
+     *
+     * @return string 
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+    
+    /**
+     * Get prenom
+     *
+     * @return string 
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+    
+    /**
+     * Get sexe
+     *
+     * @return boolean 
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
+    }
+    
+    /**
+     * Get biographie
+     *
+     * @return string 
+     */
+    public function getBiographie()
+    {
+        return $this->biographie;
+    }
+    
+    /**
+     * Get filmographie
+     *
+     * @return string 
+     */
+    public function getFilmographie()
+    {
+        return $this->filmographie;
+    }
+    
+    /**
+     * Get idImage
+     *
+     * @return integer 
+     */
+    public function getIdImage()
+    {
+        return $this->idImage;
+    }
+    
+    /**
+     * Get idFilm
+     *
+     * @return integer 
+     */
+    public function getIdFilm()
+    {
+        return $this->idFilm;
+    }
+    
+    
+	/////////////
+	// Setters //
+	/////////////
+	
     /**
      * Set nom
      *
@@ -93,16 +176,6 @@ class Acteur
         $this->nom = $nom;
 
         return $this;
-    }
-
-    /**
-     * Get nom
-     *
-     * @return string 
-     */
-    public function getNom()
-    {
-        return $this->nom;
     }
 
     /**
@@ -119,16 +192,6 @@ class Acteur
     }
 
     /**
-     * Get prenom
-     *
-     * @return string 
-     */
-    public function getPrenom()
-    {
-        return $this->prenom;
-    }
-
-    /**
      * Set sexe
      *
      * @param boolean $sexe
@@ -139,16 +202,6 @@ class Acteur
         $this->sexe = $sexe;
 
         return $this;
-    }
-
-    /**
-     * Get sexe
-     *
-     * @return boolean 
-     */
-    public function getSexe()
-    {
-        return $this->sexe;
     }
 
     /**
@@ -165,16 +218,6 @@ class Acteur
     }
 
     /**
-     * Get biographie
-     *
-     * @return string 
-     */
-    public function getBiographie()
-    {
-        return $this->biographie;
-    }
-
-    /**
      * Set filmographie
      *
      * @param string $filmographie
@@ -185,16 +228,6 @@ class Acteur
         $this->filmographie = $filmographie;
 
         return $this;
-    }
-
-    /**
-     * Get filmographie
-     *
-     * @return string 
-     */
-    public function getFilmographie()
-    {
-        return $this->filmographie;
     }
 
     /**
@@ -211,16 +244,6 @@ class Acteur
     }
 
     /**
-     * Get idImage
-     *
-     * @return integer 
-     */
-    public function getIdImage()
-    {
-        return $this->idImage;
-    }
-
-    /**
      * Set idFilm
      *
      * @param integer $idFilm
@@ -232,14 +255,52 @@ class Acteur
 
         return $this;
     }
+   
+    
+    /////////////
+    // Mapping //
+    /////////////
+    
+    /**
+     * @ORM\OneToMany(targetEntity="FilmPhare", mappedBy="acteur")
+     */
+    protected $filmPhare;
+
+    public function __construct()
+    {
+        $this->filmPhare = new ArrayCollection();
+    }
 
     /**
-     * Get idFilm
+     * Add filmPhare
      *
-     * @return integer 
+     * @param \ActorzzzBundle\Entity\FilmPhare $filmPhare
+     * @return Acteur
      */
-    public function getIdFilm()
+    public function addFilmPhare(\ActorzzzBundle\Entity\FilmPhare $filmPhare)
     {
-        return $this->idFilm;
+        $this->filmPhare[] = $filmPhare;
+
+        return $this;
+    }
+
+    /**
+     * Remove filmPhare
+     *
+     * @param \ActorzzzBundle\Entity\FilmPhare $filmPhare
+     */
+    public function removeFilmPhare(\ActorzzzBundle\Entity\FilmPhare $filmPhare)
+    {
+        $this->filmPhare->removeElement($filmPhare);
+    }
+
+    /**
+     * Get filmPhare
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getFilmPhare()
+    {
+        return $this->filmPhare;
     }
 }
