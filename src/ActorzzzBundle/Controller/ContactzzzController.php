@@ -14,41 +14,48 @@ class ContactzzzController extends Controller
 {
     public function addAction(Request $request)
     {
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            $form->handleRequest($request);
+        }
         $mail = new Contact();
         $form = $this->get('form.factory')->create(new ContactType(), $mail);
+        $data = $form->getData();
         $message = \Swift_Message::newInstance()
-            ->setFrom('damien.parmenon@gmail.fr')
-            ->setTo('parmenon.damien@gmail.fr')
-            ->setBody($form['message'])
+            ->setSubject('Test envoi')
+            ->setFrom('damien.parmenon@gmail.com')
+            ->setTo('parmenon.damien@gmail.com')
+            ->setBody($data->getMessage())
         ;
-        if ($form->handleRequest($request)->isValid()) {
+        if ($form->isValid()){
+            $this->get('mailer')->send($message);
             $em = $this->getDoctrine()->getManager();
             $em->persist($mail);
             $em->flush();
-
             $request->getSession()->getFlashBag()->add('notice', 'Mail bien envoyé.');
-            $this->get('mailer')->send($message);
             return $this->redirect($this->generateUrl('home', array('id' => $mail->getId())));
         }
-        
+
+        $this->get('mailer')->send($message);
+
         return $this->render('ActorzzzBundle:ContactView:Contact.html.twig', array(
           'form' => $form->createView(),
         ));
     }
 	
-	/*public function messageAction(){
+	/*public function addAction(){
 	
     $message = \Swift_Message::newInstance()
-        ->setSubject('Hello Email')
-        ->setFrom('charlie.Marechal53@gmail.fr')
-        ->setTo('cmarechal53@hotmail.fr')
-        ->setBody($this->renderView('ActorzzzBundle:ContactView:email.html.twig'))
+        ->setSubject('Test envoi')
+        ->setFrom('damien.parmenon@gmail.com')
+        ->setTo('parmenon.damien@gmail.com')
+        ->setBody('Test')
     ;
     $this->get('mailer')->send($message);
 
-    return $this->render('ActorzzzBundle:ContactView:email.html.twig');
-	}
-	*/
+    return $this->render('ActorzzzBundle:ContactView:Contact.html.twig');
+	}*/
+	
 	
 }
 ?>
