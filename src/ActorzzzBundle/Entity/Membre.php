@@ -1,5 +1,6 @@
 <?php
 
+// src/ActorzzzBundle/Entity/Membre.php
 namespace ActorzzzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -7,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Membre
  *
- * @ORM\Table()
+ * @ORM\Table(name = "Memberzzz")
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\MembreRepository")
  */
 class Membre
