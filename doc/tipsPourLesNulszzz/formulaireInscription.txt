@@ -1,0 +1,2 @@
+Implémentation souhaitée en lien avec ~/Symfony/src/ActorzzzBundle/Entity/adresse.php :
+	http://commons.wikimedia.org/wiki/File:Norme_de_l%27adresse_postale_selon_la_règle_AFNOR_XP_Z_10-011.png

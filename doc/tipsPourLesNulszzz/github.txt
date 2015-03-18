@@ -1,0 +1,10 @@
+FAQ : 
+Je dois delete des commits, comment faire ?
+	-> http://www.mon-code.net/article/41/pense-bete-git-suite-reparer-les-erreurs
+
+J'ai un soucis je dois toujours indiquer 'origin master' pour faire un git [push/pop].
+	-> git push -u origin master
+
+J'ai un soucis quand je tente de pusher des fichiers assez lourds, les ajouts ne fonctionnent pas.
+	-> git config http.postBuffer 500000000 
+	=> Le buffer a désormais une taille de 500 mo.
