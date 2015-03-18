@@ -66,6 +66,6 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: mail
-    username: damien.parmenon@gmail.com
+    transport: gmail
+    username: damien.parmenon
     password: jodinounette
