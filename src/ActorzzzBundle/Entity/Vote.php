@@ -1,5 +1,6 @@
 <?php
 
+// src/ActorzzzBundle/Entity/Vote.php
 namespace ActorzzzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;

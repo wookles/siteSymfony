@@ -1,5 +1,6 @@
 <?php
 
+// src/ActorzzzBundle/Entity/FilmPhare.php
 namespace ActorzzzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;

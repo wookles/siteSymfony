@@ -1,5 +1,6 @@
 <?php
 
+// src/ActorzzzBundle/Entity/Image.php
 namespace ActorzzzBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
