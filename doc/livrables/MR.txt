@@ -3,11 +3,9 @@ Modèle relationnel résultant du MEA etabli (cf. modeleEntiteAssociation.asta)
 
 Acteur(id, nom, prenom, sexe, biographie, filmographie, #idImage, #idFilm);
 
-FilmPhare(id, titre, anneeSortie, synopsis, #idImage, #IdVideo);
+FilmPhare(id, titre, anneeSortie, synopsis, #idImage, lienVideo);
 
-image(id, lien);
-
-Video(id, lien);
+Image(id, lien);
 
 Membre(id, typeMembre, pseudoMembre, passMembre, melMembre, #idImage, #idAdresse, dateAnniv);
 
