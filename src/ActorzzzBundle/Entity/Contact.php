@@ -8,11 +8,15 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Contact
  *
- * @ORM\Table(name = "Contact")
+ * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\ContactRepository")
  */
-class Contact
-{
+class Contact{
+
+	///////////////
+	// Variables //
+	///////////////
+	
     /**
      * @var integer
      *
@@ -44,6 +48,10 @@ class Contact
     private $message;
 
 
+	/////////////
+	// Getters //
+	/////////////
+	
     /**
      * Get id
      *

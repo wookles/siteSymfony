@@ -8,12 +8,14 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Image
  *
- * @ORM\Table(name = "Image")
+ * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\ImageRepository")
  */
-class Image
-{
+class Image{
 	
+	///////////////
+	// Variables //
+	///////////////
 
     /**
      * @var integer
@@ -31,6 +33,10 @@ class Image
      */
     private $lien;
 
+
+	/////////////
+	// Getters //
+	/////////////
 
     /**
      * Get id
@@ -63,5 +69,19 @@ class Image
     public function getLien()
     {
         return $this->lien;
+    }
+    
+    /////////////
+    // Mapping //
+    /////////////
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Acteur", mappedBy="image")
+     */
+    protected $acteur;
+
+    public function __construct()
+    {
+        $this->acteur = new ArrayCollection();
     }
 }

@@ -8,11 +8,15 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Adresse
  *
- * @ORM\Table(name = "Adresse")
+ * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\AdresseRepository")
  */
-class Adresse
-{
+class Adresse{
+
+	///////////////
+	// Variables //
+	///////////////
+	
     /**
      * @var integer
      *
@@ -71,6 +75,10 @@ class Adresse
      */
     private $champ6;
 
+
+	/////////////
+	// Getters //
+	/////////////
 
     /**
      * Get id

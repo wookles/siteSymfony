@@ -11,8 +11,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\FilmPhareRepository")
  */
-class FilmPhare
-{
+class FilmPhare{
+
 	///////////////
 	// Variables //
 	///////////////

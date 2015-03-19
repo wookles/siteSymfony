@@ -8,11 +8,15 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Membre
  *
- * @ORM\Table(name = "Memberzzz")
+ * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\MembreRepository")
  */
-class Membre
-{
+class Membre{
+
+	///////////////
+	// Variables //
+	///////////////
+	
     /**
      * @var integer
      *
@@ -71,6 +75,10 @@ class Membre
      */
     private $dateAnniv;
 
+
+	/////////////
+	// Getters //
+	/////////////
 
     /**
      * Get id

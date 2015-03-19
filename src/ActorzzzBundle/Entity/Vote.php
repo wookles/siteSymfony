@@ -8,11 +8,15 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Vote
  *
- * @ORM\Table(name = "Vote")
+ * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\VoteRepository")
  */
-class Vote
-{
+class Vote{
+
+	///////////////
+	// Variables //
+	///////////////
+	
     /**
      * @var integer
      *
@@ -37,6 +41,10 @@ class Vote
     private $idActeur;
 
 
+	/////////////
+	// Getters //
+	/////////////
+    
     /**
      * Get id
      *

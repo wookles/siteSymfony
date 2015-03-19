@@ -8,11 +8,11 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Acteur
  *
- * @ORM\Table(name = "Actorzzz")
+ * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\ActeurRepository")
  */
-class Acteur
-{
+class Acteur{
+
 	///////////////
 	// Variables //
 	///////////////

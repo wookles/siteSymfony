@@ -8,11 +8,15 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Admin
  *
- * @ORM\Table(name = "Adminzzz")
+ * @ORM\Table()
  * @ORM\Entity(repositoryClass="ActorzzzBundle\Entity\AdminRepository")
  */
-class Admin
-{
+class Admin{
+
+	///////////////
+	// Variables //
+	///////////////
+	
     /**
      * @var integer
      *
@@ -36,7 +40,11 @@ class Admin
      */
     private $idImage;
 
-
+	
+	/////////////
+	// Getters //
+	/////////////
+		
     /**
      * Get id
      *
